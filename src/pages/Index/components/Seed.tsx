@@ -1,5 +1,5 @@
 import { Draggable } from 'react-beautiful-dnd';
-import './style/seed.less';
+import styles from './style/seed.less';
 
 export default (props: any) => {
   const { data, index } = props;
@@ -8,7 +8,7 @@ export default (props: any) => {
       <Draggable draggableId={data.id} index={index}>
         {(provided: any, snapshot: any) => (
           <div
-            className="cell"
+            className={styles.eachTag}
             {...provided.draggableProps}
             {...provided.dragHandleProps}
             ref={provided.innerRef}

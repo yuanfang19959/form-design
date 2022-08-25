@@ -1,7 +1,32 @@
 .cell {
   margin: 5px 0;
   margin-bottom: 8px;
-  padding: 5px 10px;
-  background-color: #e4e4e4;
+  padding: 15px 20px;
+  background-color: #f6f7ff;
   transition: background-color 0.2s ease;
+  border-radius: 3px;
+}
+
+.active {
+  background-color: #7ec1ff;
+}
+
+.eachTag {
+  float: left;
+  width: calc((100% - 2px) / 2);
+  padding: 8px 10px;
+  margin-bottom: 2px;
+  background-color: #f6f7ff;
+  font-size: 12px;
+  cursor: move;
+  border: 1px dashed #f6f7ff;
+  border-radius: 3px;
+  &:hover,
+  &:active {
+    border: 1px dashed #787be8;
+    color: #787be8;
+  }
+  &:nth-child(2n) {
+    margin-left: 2px;
+  }
 }
